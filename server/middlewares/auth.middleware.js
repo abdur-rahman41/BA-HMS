@@ -20,7 +20,7 @@ const authenticate = async (req, res, next) => {
 
 const authorize = (...roles) => {
   return (req, res, next) => {
-    // console.log(req.body);
+    console.log(req.body);
     if (!roles.includes(req.user.role)) return res.status(403).json({ message: 'Forbidden' });
     next();
   };

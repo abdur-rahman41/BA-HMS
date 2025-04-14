@@ -18,7 +18,7 @@ module.exports = (sequelize, DataTypes) => {
     last_name: DataTypes.STRING,
     date_of_birth: DataTypes.DATEONLY,
     gender: {
-      type: Sequelize.ENUM('M', 'F'),
+      type: DataTypes.STRING,
       allowNull: false,
     },
     

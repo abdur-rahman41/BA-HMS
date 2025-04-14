@@ -19,7 +19,7 @@ module.exports = {
         type: Sequelize.DATEONLY
       },
       gender: {
-        type: Sequelize.ENUM('M', 'F')
+        type: Sequelize.STRING
       },
       contact_number: {
         type: Sequelize.STRING
